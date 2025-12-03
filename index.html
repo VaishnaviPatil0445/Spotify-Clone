@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify - Web Player: Music for everyone</title>
+  <link rel="icon" href="./assets/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Main Container -->
+  <div class="main">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="nav">
+        <div class="nav-option" style="opacity: 1;">
+          <i class="fa-solid fa-house"></i>
+          <a href="#">Home</a>
+        </div>
+        <div class="nav-option">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a href="#">Search</a>
+        </div>
+      </div>
+
+      <div class="library">
+        <div class="options">
+          <div class="lib-option">
+            <img src="./assets/library_icon.png" alt="Library">
+            <a href="#">Your Library</a>
+          </div>
+        </div>
+        <div class="boxes">
+          <div class="library-box">
+            <h4>Your Library</h4>
+            <p>Create your first playlist</p>
+            <p>It's easy, we'll help you</p>
+            <button>Create playlist</button>
+          </div>
+          <div class="library-box">
+            <p>Let's find some podcasts to follow</p>
+            <p>We'll keep you updated on new episodes</p>
+            <button>Browse podcasts</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Top Navigation -->
+      <div class="top-nav">
+        <div class="nav-arrows">
+          <img src="./assets/backward_icon.png" alt="Back" class="nav-arrow">
+          <img src="./assets/forward_icon.png" alt="Forward" class="nav-arrow">
+        </div>
+        <div class="right-buttons">
+          <button class="btn-premium">Explore Premium</button>
+          <button class="btn-install">Install App</button>
+          <div class="user-profile">
+            <div class="user-icon">U</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recently Played Section -->
+      <h2>Recently played</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="./assets/card1img.jpeg" alt="Top 50 - Global">
+          <h4>Top 50 - Global</h4>
+          <p>Your daily update of the most played...</p>
+        </div>
+      </div>
+
+      <!-- Podcasts Section -->
+      <h2>Spotify original & exclusive podcasts</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="./assets/card2img.jpeg" alt="True Story Bro">
+          <h4>True Story Bro!</h4>
+          <p>Spotify Original Podcast</p>
+        </div>
+        <div class="card">
+          <img src="./assets/card3img.jpeg" alt="Chanakya Niti">
+          <h4>Chanakya Niti</h4>
+          <p>Spotify Exclusive</p>
+        </div>
+        <div class="card">
+          <img src="./assets/card4img.jpeg" alt="The Horror Show">
+          <h4>The Horror Show</h4>
+          <p>Spotify Exclusive</p>
+        </div>
+        <div class="card">
+          <img src="./assets/card5img.jpeg" alt="Horror Time">
+          <h4>Horror Time</h4>
+          <p>Spotify Original</p>
+        </div>
+        <div class="card">
+          <img src="./assets/card6img.jpeg" alt="Podcast New">
+          <h4>Podcast Special</h4>
+          <p>Spotify Exclusive</p>
+        </div>
+      </div>
+
+      <!-- Liked Songs Section -->
+      <h2>Liked Songs</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="./assets/card1img.jpeg" alt="Liked Songs">
+          <h4>Liked Songs</h4>
+          <p>A playlist of your favorite songs</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player">
+      <div class="player-left">
+        <img src="./assets/card1img.jpeg" alt="Now Playing" class="now-playing-img">
+        <div class="now-playing-info">
+          <div class="song-title">Song Title</div>
+          <div class="artist">Artist Name</div>
+        </div>
+        <div class="like-btn">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+      </div>
+      <div class="player-center">
+        <div class="player-controls">
+          <i class="fa-solid fa-shuffle control-icon"></i>
+          <i class="fa-solid fa-backward-step control-icon"></i>
+          <i class="fa-solid fa-play control-icon play-btn" style="font-size: 20px;"></i>
+          <i class="fa-solid fa-forward-step control-icon"></i>
+          <i class="fa-solid fa-repeat control-icon"></i>
+        </div>
+        <div class="progress-container">
+          <span class="time">1:23</span>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+          <span class="time">3:45</span>
+        </div>
+      </div>
+      <div class="player-right">
+        <i class="fa-solid fa-volume-high"></i>
+        <div class="volume-bar">
+          <div class="volume-progress"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
